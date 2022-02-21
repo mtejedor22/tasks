@@ -2,221 +2,208 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-FAIL src/arrays.test.ts
+PASS src/arrays.test.ts
   ● Console
 
     console.log
       [ 1, 3 ]
 
-      at bookEndList (src/arrays.ts:9:13)
+      at bookEndList (src/arrays.ts:10:13)
 
     console.log
       [ 100, 200 ]
 
-      at bookEndList (src/arrays.ts:9:13)
+      at bookEndList (src/arrays.ts:10:13)
 
     console.log
       [ 5, 5 ]
 
-      at bookEndList (src/arrays.ts:9:13)
+      at bookEndList (src/arrays.ts:10:13)
 
     console.log
-      [ undefined, undefined ]
+      []
 
-      at bookEndList (src/arrays.ts:9:13)
+      at bookEndList (src/arrays.ts:10:13)
+
+    console.log
+      [ 100, 3 ]
+
+      at bookEndList (src/arrays.ts:10:13)
+
+    console.log
+      [ -100, 200 ]
+
+      at bookEndList (src/arrays.ts:10:13)
 
     console.log
       [ 'Hello', 'you', 'are', 'GREAT!' ]
 
-      at shoutIfExclaiming (src/arrays.ts:62:13)
+      at shoutIfExclaiming (src/arrays.ts:63:13)
 
     console.log
       [ 'OHO!', 'OHO!', 'OHO!', 'OHO!', 'OHO!' ]
 
-      at shoutIfExclaiming (src/arrays.ts:62:13)
+      at shoutIfExclaiming (src/arrays.ts:63:13)
 
     console.log
       [ 'Lo', 'HIGH!' ]
 
-      at shoutIfExclaiming (src/arrays.ts:62:13)
+      at shoutIfExclaiming (src/arrays.ts:63:13)
 
     console.log
       []
 
-      at shoutIfExclaiming (src/arrays.ts:62:13)
+      at shoutIfExclaiming (src/arrays.ts:63:13)
 
     console.log
       [ 'THIS ONE IS VERY LONG!' ]
 
-      at shoutIfExclaiming (src/arrays.ts:62:13)
+      at shoutIfExclaiming (src/arrays.ts:63:13)
 
     console.log
       [ 'No', 'Caps', 'here.' ]
 
-      at shoutIfExclaiming (src/arrays.ts:62:13)
+      at shoutIfExclaiming (src/arrays.ts:63:13)
 
     console.log
       [ 1, 2, 3 ]
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       [ 1, 2, 3 ]
 
-      at injectPositive (src/arrays.ts:126:13)
+      at injectPositive (src/arrays.ts:127:13)
 
     console.log
       6
 
-      at injectPositive (src/arrays.ts:127:13)
+      at injectPositive (src/arrays.ts:128:13)
 
     console.log
       [ 1, 2, 3 ]
 
-      at injectPositive (src/arrays.ts:129:13)
+      at injectPositive (src/arrays.ts:130:13)
 
     console.log
       [ 100, 300, 200 ]
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       [ 100, 300, 200 ]
 
-      at injectPositive (src/arrays.ts:126:13)
+      at injectPositive (src/arrays.ts:127:13)
 
     console.log
       600
 
-      at injectPositive (src/arrays.ts:127:13)
+      at injectPositive (src/arrays.ts:128:13)
 
     console.log
       [ 100, 300, 200 ]
 
-      at injectPositive (src/arrays.ts:129:13)
+      at injectPositive (src/arrays.ts:130:13)
 
     console.log
       [ 5 ]
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       [ 5 ]
 
-      at injectPositive (src/arrays.ts:126:13)
+      at injectPositive (src/arrays.ts:127:13)
 
     console.log
       5
 
-      at injectPositive (src/arrays.ts:127:13)
+      at injectPositive (src/arrays.ts:128:13)
 
     console.log
       [ 5 ]
 
-      at injectPositive (src/arrays.ts:129:13)
+      at injectPositive (src/arrays.ts:130:13)
 
     console.log
       []
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       []
-
-      at injectPositive (src/arrays.ts:126:13)
-
-    console.log
-      0
 
       at injectPositive (src/arrays.ts:127:13)
 
     console.log
+      0
+
+      at injectPositive (src/arrays.ts:128:13)
+
+    console.log
       []
 
-      at injectPositive (src/arrays.ts:129:13)
+      at injectPositive (src/arrays.ts:130:13)
 
     console.log
       [ 100, 199, 1, -5, 7, 3 ]
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       [ 100, 199, 1 ]
 
-      at injectPositive (src/arrays.ts:126:13)
+      at injectPositive (src/arrays.ts:127:13)
 
     console.log
       300
 
-      at injectPositive (src/arrays.ts:127:13)
+      at injectPositive (src/arrays.ts:128:13)
 
     console.log
       [ 100, 199, 1, -5, 7, 3 ]
 
-      at injectPositive (src/arrays.ts:129:13)
+      at injectPositive (src/arrays.ts:130:13)
 
     console.log
       [ -100, -200, 100, 200 ]
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       []
 
-      at injectPositive (src/arrays.ts:126:13)
+      at injectPositive (src/arrays.ts:127:13)
 
     console.log
       0
 
-      at injectPositive (src/arrays.ts:127:13)
+      at injectPositive (src/arrays.ts:128:13)
 
     console.log
       [ -100, -200, 100, 200 ]
 
-      at injectPositive (src/arrays.ts:129:13)
+      at injectPositive (src/arrays.ts:130:13)
 
     console.log
       [ 199, 1, 550, 50, 200 ]
 
-      at injectPositive (src/arrays.ts:117:13)
+      at injectPositive (src/arrays.ts:118:13)
 
     console.log
       [ 199, 1, 550, 50, 200 ]
-
-      at injectPositive (src/arrays.ts:126:13)
-
-    console.log
-      1000
 
       at injectPositive (src/arrays.ts:127:13)
 
     console.log
+      1000
+
+      at injectPositive (src/arrays.ts:128:13)
+
+    console.log
       [ 199, 1, 550, 50, 200 ]
 
-      at injectPositive (src/arrays.ts:129:13)
-
-  ● Testing the array functions › Testing the bookEndList function
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 4
-
-    - Array []
-    + Array [
-    +   undefined,
-    +   undefined,
-    + ]
-
-      39 |         expect(bookEndList(NUMBERS_2)).toEqual([100, 200]);
-      40 |         expect(bookEndList(NUMBERS_3)).toEqual([5, 5]);
-    > 41 |         expect(bookEndList(NUMBERS_4)).toEqual([]);
-         |                                        ^
-      42 |         expect(bookEndList(NUMBERS_5)).toEqual([100, 3]);
-      43 |         expect(bookEndList(NUMBERS_6)).toEqual([-100, 200]);
-      44 |     });
-
-      at Object.<anonymous> (src/arrays.test.ts:41:40)
+      at injectPositive (src/arrays.ts:130:13)
 
 PASS src/HtmlCss.test.tsx
 PASS src/functions.test.ts
@@ -231,8 +218,8 @@ All files     |     100 |      100 |     100 |     100 |
  functions.ts |     100 |      100 |     100 |     100 |                   
 --------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 1 failed, 4 passed, 5 total
-Tests:       1 failed, 22 passed, 23 total
+Test Suites: 5 passed, 5 total
+Tests:       23 passed, 23 total
 Snapshots:   0 total
-Time:        4.217 s
+Time:        4.211 s
 Ran all test suites.
