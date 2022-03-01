@@ -2,209 +2,65 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test "--coverage"
 
-PASS src/arrays.test.ts
+PASS src/nested.test.ts
   ● Console
 
     console.log
-      [ 1, 3 ]
+      0
 
-      at bookEndList (src/arrays.ts:10:13)
-
-    console.log
-      [ 100, 200 ]
-
-      at bookEndList (src/arrays.ts:10:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      [ 5, 5 ]
+      1
 
-      at bookEndList (src/arrays.ts:10:13)
-
-    console.log
-      []
-
-      at bookEndList (src/arrays.ts:10:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      [ 100, 3 ]
+      2
 
-      at bookEndList (src/arrays.ts:10:13)
-
-    console.log
-      [ -100, 200 ]
-
-      at bookEndList (src/arrays.ts:10:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      [ 'Hello', 'you', 'are', 'GREAT!' ]
+      -1
 
-      at shoutIfExclaiming (src/arrays.ts:63:13)
-
-    console.log
-      [ 'OHO!', 'OHO!', 'OHO!', 'OHO!', 'OHO!' ]
-
-      at shoutIfExclaiming (src/arrays.ts:63:13)
-
-    console.log
-      [ 'Lo', 'HIGH!' ]
-
-      at shoutIfExclaiming (src/arrays.ts:63:13)
-
-    console.log
-      []
-
-      at shoutIfExclaiming (src/arrays.ts:63:13)
-
-    console.log
-      [ 'THIS ONE IS VERY LONG!' ]
-
-      at shoutIfExclaiming (src/arrays.ts:63:13)
-
-    console.log
-      [ 'No', 'Caps', 'here.' ]
-
-      at shoutIfExclaiming (src/arrays.ts:63:13)
-
-    console.log
-      [ 1, 2, 3 ]
-
-      at injectPositive (src/arrays.ts:118:13)
-
-    console.log
-      [ 1, 2, 3 ]
-
-      at injectPositive (src/arrays.ts:127:13)
-
-    console.log
-      6
-
-      at injectPositive (src/arrays.ts:128:13)
-
-    console.log
-      [ 1, 2, 3 ]
-
-      at injectPositive (src/arrays.ts:130:13)
-
-    console.log
-      [ 100, 300, 200 ]
-
-      at injectPositive (src/arrays.ts:118:13)
-
-    console.log
-      [ 100, 300, 200 ]
-
-      at injectPositive (src/arrays.ts:127:13)
-
-    console.log
-      600
-
-      at injectPositive (src/arrays.ts:128:13)
-
-    console.log
-      [ 100, 300, 200 ]
-
-      at injectPositive (src/arrays.ts:130:13)
-
-    console.log
-      [ 5 ]
-
-      at injectPositive (src/arrays.ts:118:13)
-
-    console.log
-      [ 5 ]
-
-      at injectPositive (src/arrays.ts:127:13)
-
-    console.log
-      5
-
-      at injectPositive (src/arrays.ts:128:13)
-
-    console.log
-      [ 5 ]
-
-      at injectPositive (src/arrays.ts:130:13)
-
-    console.log
-      []
-
-      at injectPositive (src/arrays.ts:118:13)
-
-    console.log
-      []
-
-      at injectPositive (src/arrays.ts:127:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
       0
 
-      at injectPositive (src/arrays.ts:128:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      []
+      1
 
-      at injectPositive (src/arrays.ts:130:13)
-
-    console.log
-      [ 100, 199, 1, -5, 7, 3 ]
-
-      at injectPositive (src/arrays.ts:118:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      [ 100, 199, 1 ]
+      2
 
-      at injectPositive (src/arrays.ts:127:13)
-
-    console.log
-      300
-
-      at injectPositive (src/arrays.ts:128:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      [ 100, 199, 1, -5, 7, 3 ]
+      3
 
-      at injectPositive (src/arrays.ts:130:13)
-
-    console.log
-      [ -100, -200, 100, 200 ]
-
-      at injectPositive (src/arrays.ts:118:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      []
+      -1
 
-      at injectPositive (src/arrays.ts:127:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
       0
 
-      at injectPositive (src/arrays.ts:128:13)
+      at findQuestion (src/nested.ts:41:13)
 
     console.log
-      [ -100, -200, 100, 200 ]
+      -1
 
-      at injectPositive (src/arrays.ts:130:13)
+      at findQuestion (src/nested.ts:41:13)
 
-    console.log
-      [ 199, 1, 550, 50, 200 ]
-
-      at injectPositive (src/arrays.ts:118:13)
-
-    console.log
-      [ 199, 1, 550, 50, 200 ]
-
-      at injectPositive (src/arrays.ts:127:13)
-
-    console.log
-      1000
-
-      at injectPositive (src/arrays.ts:128:13)
-
-    console.log
-      [ 199, 1, 550, 50, 200 ]
-
-      at injectPositive (src/arrays.ts:130:13)
-
+PASS src/arrays.test.ts
 PASS src/objects.test.ts
   ● Console
 
@@ -250,13 +106,15 @@ All files       |     100 |      100 |     100 |     100 |
   App.tsx       |     100 |      100 |     100 |     100 |                   
   arrays.ts     |     100 |      100 |     100 |     100 |                   
   functions.ts  |     100 |      100 |     100 |     100 |                   
+  nested.ts     |     100 |      100 |     100 |     100 |                   
   objects.ts    |     100 |      100 |     100 |     100 |                   
  src/interfaces |       0 |        0 |       0 |       0 |                   
+  answer.ts     |       0 |        0 |       0 |       0 |                   
   question.ts   |       0 |        0 |       0 |       0 |                   
 ----------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 6 passed, 6 total
-Tests:       33 passed, 33 total
+Test Suites: 7 passed, 7 total
+Tests:       49 passed, 49 total
 Snapshots:   0 total
-Time:        5.369 s
+Time:        4.414 s
 Ran all test suites.
