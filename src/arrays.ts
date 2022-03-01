@@ -7,7 +7,6 @@
 export function bookEndList(numbers: number[]): number[] {
     const firstlast: number[] =
         numbers.length > 0 ? [numbers[0], numbers[numbers.length - 1]] : [];
-    console.log(firstlast);
     return firstlast;
 }
 
@@ -60,7 +59,6 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
     const final = new_array.filter(
         (sentence: string): boolean => !sentence.includes("?")
     );
-    console.log(final);
     return final;
 };
 
@@ -115,7 +113,6 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    console.log(values);
     const cloneValues = [...values];
     let indexes = cloneValues.findIndex((value: number): boolean => value < 0);
     indexes = indexes < 0 ? values.length : indexes;
@@ -124,9 +121,6 @@ export function injectPositive(values: number[]): number[] {
         (currentTotal: number, num: number) => currentTotal + num,
         0
     );
-    console.log(take);
-    console.log(sum);
     cloneValues.splice(indexes + 1, 0, sum);
-    console.log(values);
     return cloneValues;
 }
