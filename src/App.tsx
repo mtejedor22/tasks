@@ -1,6 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): JSX.Element {
     return (
@@ -8,50 +14,18 @@ function App(): JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript.
             </header>
-            <Container>
-                <Row>
-                    <Col>
-                        <div
-                            style={{
-                                height: "50px",
-                                width: "100%",
-                                backgroundColor: "red"
-                            }}
-                        ></div>
-                        <h2 style={{ padding: "10px" }}>
-                            My first Web Application!
-                        </h2>
-                        <p>
-                            Hey my name is Mar! Im so exited to take this
-                            class!!!
-                        </p>
-                        <p>Hello World!</p>
-                        <ul style={{ textAlign: "left" }}>
-                            <li>Name: Mar Tejedor</li>
-                            <li>Course: Computer Science</li>
-                            <li>Year: Spring 2022</li>
-                            <li>Class: Sophomore</li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{
-                                height: "50px",
-                                width: "100%",
-                                backgroundColor: "red"
-                            }}
-                        ></div>
-                        <Button onClick={() => console.log("Hello World!")}>
-                            Log Hello World
-                        </Button>
-                        <img
-                            style={{ height: "150px", padding: "15px" }}
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/72/Basketball_Clipart.svg"
-                            alt="A picture of a basketball ball"
-                        />
-                    </Col>
-                </Row>
-            </Container>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
