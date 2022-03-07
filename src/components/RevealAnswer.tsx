@@ -9,7 +9,6 @@ export function RevealAnswer(): JSX.Element {
         setVisible(!visible);
     }
 
-    // Only includes <div>Hello!</div> if `visible` is true
     return (
         <div>
             <Button onClick={flipVisibility}>Reveal Answer</Button>
