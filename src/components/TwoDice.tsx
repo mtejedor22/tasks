@@ -28,14 +28,15 @@ export function TwoDice(): JSX.Element {
             <span data-testid="left-die">{oneDice}</span>
             <Button onClick={set2}>Roll Right</Button>
             <span data-testid="right-die">{twoDice}</span>
-            {oneDice === twoDice ? (
-                oneDice === 1 && twoDice === 1 ? (
-                    <div>Lose</div>
-                ) : (
-                    <div>Win</div>
-                )
+            {oneDice === twoDice && oneDice !== 1 ? (
+                <div>Win</div>
             ) : (
-                <div>Keep playing!</div>
+                <div> </div>
+            )}
+            {oneDice === twoDice && oneDice === 1 ? (
+                <div>Lose</div>
+            ) : (
+                <div> </div>
             )}
         </div>
     );
