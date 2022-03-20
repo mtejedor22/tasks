@@ -47,6 +47,8 @@ function App(): JSX.Element {
             <hr></hr>
             <Counter></Counter>
             <hr />
+            <DoubleHalf></DoubleHalf>
+            <hr />
             <RevealAnswer></RevealAnswer>
             <hr />
             <StartAttempt></StartAttempt>
