@@ -23,28 +23,38 @@ export function EditMode(): JSX.Element {
     // This is the View
     return (
         <div>
-            <Form.Check
-                type="switch"
-                id="is-Edit-Mode"
-                label="Edit Mode"
-                checked={isEditMode}
-                onChange={changeMode}
-            />
-            <Form.Check
-                type="checkbox"
-                id="is-student-check"
-                label="checkbox"
-                disabled={!isEditMode}
-                checked={isStudent}
-                onChange={updateStudent}
-            />
-            <Form.Group controlId="formStudentName">
-                <Form.Control
-                    disabled={!isEditMode}
-                    value={name}
-                    onChange={updateName}
+            <div>
+                <Form.Check
+                    type="switch"
+                    id="is-Edit-Mode"
+                    label="Edit Mode"
+                    checked={isEditMode}
+                    onChange={changeMode}
                 />
-            </Form.Group>
+            </div>
+            <div>
+                {isEditMode && (
+                    <Form.Check
+                        type="checkbox"
+                        id="is-student-check"
+                        label="notStudent"
+                        disabled={!isEditMode}
+                        checked={isStudent}
+                        onChange={updateStudent}
+                    />
+                )}
+            </div>
+            <div>
+                {isEditMode && (
+                    <Form.Group controlId="formStudentName">
+                        <Form.Control
+                            disabled={!isEditMode}
+                            value={name}
+                            onChange={updateName}
+                        />
+                    </Form.Group>
+                )}
+            </div>
             {isStudent ? (
                 <span>{name} is a student.</span>
             ) : (
