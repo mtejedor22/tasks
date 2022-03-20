@@ -1,9 +1,55 @@
 import React, { useState } from "react";
+import { Form } from "react-bootstrap";
 
 export function EditMode(): JSX.Element {
+    // This is the State (Model)
+    const [isEditMode, setIsEditMode] = useState<boolean>(false);
+    const [name, setName] = useState<string>("Your Name");
+    const [isStudent, setIsStudent] = useState<boolean>(true);
+
+    // This is the Control
+    function changeMode(event: React.ChangeEvent<HTMLInputElement>) {
+        setIsEditMode(event.target.checked);
+    }
+
+    function updateName(event: React.ChangeEvent<HTMLInputElement>) {
+        setName(event.target.value);
+    }
+
+    function updateStudent(event: React.ChangeEvent<HTMLInputElement>) {
+        setIsStudent(event.target.checked);
+    }
+
+    // This is the View
     return (
         <div>
-            <h3>Edit Mode</h3>
+            <Form.Check
+                type="switch"
+                id="is-Edit-Mode"
+                label="Edit Mode"
+                checked={isEditMode}
+                onChange={changeMode}
+            />
+            <Form.Check
+                type="checkbox"
+                id="is-student-check"
+                label="checkbox"
+                disabled={!isEditMode}
+                checked={isStudent}
+                onChange={updateStudent}
+            />
+            <Form.Group controlId="formStudentName">
+                <Form.Control
+                    disabled={!isEditMode}
+                    value={name}
+                    onChange={updateName}
+                />
+            </Form.Group>
+            {isStudent ? (
+                <span>{name} is a student.</span>
+            ) : (
+                <span>{name} is not a student.</span>
+            )}
         </div>
     );
 }
