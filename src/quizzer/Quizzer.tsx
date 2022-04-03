@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Row, Col, Stack } from "react-bootstrap";
+import { Button, Container, Row, Stack } from "react-bootstrap";
 import { QuestionList } from "./QuestionList";
 import ghibli from "../data/questions.json";
 import { Question } from "../interfaces/question";
