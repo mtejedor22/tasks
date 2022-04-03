@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Question } from "../interfaces/question";
-import { Container, Row, Col, Stack, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Stack } from "react-bootstrap";
 import { QuestionOne } from "./QuestionOne";
 //import ghibli from "../data/questions.json";
 //import { MovieView } from "./MovieView";
@@ -10,12 +10,6 @@ export function QuestionList({
 }: {
     questions: Question[];
 }): JSX.Element {
-    const [name, setName] = useState<string>("");
-
-    function updateName(event: React.ChangeEvent<HTMLInputElement>) {
-        setName(event.target.value);
-    }
-
     return (
         <Stack gap={3}>
             {questions.map((question: Question) => {

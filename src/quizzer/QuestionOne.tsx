@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { Question } from "../interfaces/question";
 
 export function QuestionOne({ question }: { question: Question }): JSX.Element {
